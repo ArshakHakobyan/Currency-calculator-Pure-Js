@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="ratesTable">
+
+            <div class="sell" >
+                <span class="a">Purchase</span>
+                <span class="b">Sale</span>
+            </div>
+            
+            <div class="rates">
+
+                <div class="nameLogo">
+                    <span> USD <img src="img/currency-usd.svg" alt=""></span>
+                </div>
+                <div class="prices">
+                    <span class="price" id="pusd"> 100 </span>
+                    <span class="price" class="usd"> 426 </span>
+                </div>
+                
+            </div>
+
+            <div class="rates">
+
+                <div class="nameLogo">
+                    <span> EURO <img src="img/currency-eur.svg" alt=""></span>
+                </div>
+                <div class="prices">
+                    <span class="price" id="peuro"> 100 </span>
+                    <span class="price" class="euro"> 424 </span>
+                </div>
+                
+            </div>
+            <div class="rates">
+
+                <div class="nameLogo">
+                    <span> RUB <img src="img/currency-rub.svg" alt=""></span>
+                </div>
+                <div class="prices">
+                    <span class="price" id="prub"> 100 </span>
+                    <span class="price" class="rub"> 7.6 </span>
+                </div>
+                
+            </div>
+            <div class="rates">
+
+                <div class="nameLogo">
+                    <span> GBR <img src="img/currency-gbp.svg" alt=""></span>
+                </div>
+                <div class="prices">
+                    <span class="price" id="pgbr"> 100 </span>
+                    <span class="price" class="gbr"> 490 </span>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="convertTable">
+            <div class="currenciesContainer">
+                <div class = "selectors">
+                    <select class="valSelectors" name="Currencies" id="Currencies1">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="rub">RUR</option>
+                        <option value="amd" selected>AMD</option>
+                    </select>
+
+                    <button <i class="changeBtn fa-solid fa-arrow-right-arrow-left" id="btn"></i></button>
+
+                    <select class="valSelectors" name="Currencies1" id="Currencies2">
+                        <option value="usd">USD</option>
+                        <option value="eur" selected>EUR</option>
+                        <option value="rub">RUR</option>
+                        <option value="amd">AMD</option>
+                    </select>
+                </div>
+                <div class="changeInputs">
+                    <label >
+                        <input type="number" placeholder="Type Here" id="firstInput" class="valuteInput">
+                    </label>
+                    <div class="blok"></div>
+                    <label >
+                        <input type="number" placeholder="Type Here" id="secondInput" class="valuteInput">
+                    </label>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
